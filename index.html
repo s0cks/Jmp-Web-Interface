@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html data-ng-app="jmp">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Jmp Web Interface</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/jmp.css" rel="stylesheet"/>
+        <link href="https://bootswatch.com/slate/bootstrap.min.css"/>
+    </head>
+    <body>
+        <div id="wrapper">
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#/">Jmp</a>
+                </div>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav side-nav">
+                        <li>
+                            <a href="#/">Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#/activity">Activity</a>
+                        </li>
+                        <li>
+                            <a href="#/stats">Stats</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div id="page-wrapper">
+                <div class="container-fluid">
+                    <div data-ng-view></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+        <script src="//cdn.jsdelivr.net/sockjs/1.0.0/sockjs.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular-route.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/vertxeventbus.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
